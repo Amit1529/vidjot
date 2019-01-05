@@ -1,0 +1,9 @@
+<div class="card card-body">
+    <h3>Delete video idea</h3>
+    <form action="/ideas/{{idea.id}}?_method=DELETE" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <h4>{{idea.title}}</h4>
+        <p>{{idea.details}}</p>
+        <button type="submit" class="btn btn-primary">Delete resource</button>
+    </form>
+</div>
